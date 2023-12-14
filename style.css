@@ -1,0 +1,228 @@
+/* CSS rest */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* Navigation BAR: logo and image */
+
+#logo{
+    margin: 5px 12px;
+}
+ 
+#logo img{
+    margin: -2px 12px;
+    width: 70px;
+    height: 70px;
+    border-radius: 14px;
+    border: 2px solid cyan;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+/* Navigation BAR: list styling */
+
+#navbar{
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+
+#navbar ul li{
+        
+    font-size:1.4em;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 28px;
+    border-radius: 23px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: red;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    padding: 2px 25px;
+    height: 550px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pangolin', cursive;
+
+}
+
+#home::before{
+    content: "";
+    background:url('img/abstract-space.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:642px;
+   width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity:0.9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* services section */
+#services{
+margin: 20px;
+display: flex;
+
+}
+ 
+
+#services .box{
+ border: 2px solid rgb(225, 10, 10);
+ text-align: center;
+ padding: 34px;
+ margin: 15px;
+ border-radius: 15px;
+ background-color:rgb(108 128 206);
+}
+
+
+
+#services .box img{
+ height: 160px;
+ margin: auto;
+    display: block;
+    border: 2px solid white ;
+    border-radius: 15px ;
+    
+}
+#service .box p{
+    font-family: 'Pangolin', cursive;
+    
+}
+/* contact section */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:" ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('img/contactsus.webp') no-repeat center center/cover ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 23px ;
+}
+ #contact-box form{
+    width: 40%;
+ }   
+ #contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Pangolin', cursive;
+ }   
+#contact-box input,
+#contact-box textarea{ 
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* client section */
+ #client-section{
+
+position: relative;
+ }
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 43px;
+}
+
+#client-section::before{
+    content:"";
+    background: url('img/bois.png');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.55;
+}
+#clients img{
+  height: 110px;
+}
+/* utility class */
+.h-primary{
+    
+    font-size: 3rem;
+    padding: 15px;
+    font-family: 'Pangolin', cursive;
+}
+.btn {
+    padding: 6px 19px;
+    margin: 13px;
+    border: 2px solid #04fd8c;
+    font-size: 1.5rem;
+    background-color: #9e079e;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+
+.center{
+    text-align: center;
+}
+
+.h-secondary{
+    font-family: 'Pangolin', cursive;
+    font-size: 2rem;
+    padding: 13px;
+}
